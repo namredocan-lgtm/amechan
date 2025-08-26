@@ -1,3 +1,6 @@
+# Minimal web server for Render keep-alive
+import threading
+from flask import Flask
 import discord
 import asyncio
 import os
@@ -108,8 +111,21 @@ async def on_disconnect():
     if cai_client:
         await cai_client.close_session()
 
+# === Minimal Flask web server for Render keep-alive ===
+def run_web():
+    app = Flask(__name__)
+
+    @app.route("/")
+    def home():
+        return "Bot is running!"
+
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+
 if not DISCORD_TOKEN:
     print("❌ DISCORD_TOKEN not found in environment variables")
     print("Please add your Discord bot token to the Secrets tab")
-else: # Start the web server to keep the bot alive
+else:
+    # Start the web server in a separate thread
+    threading.Thread(target=run_web, daemon=True).start()
     bot.run(DISCORD_TOKEN)
