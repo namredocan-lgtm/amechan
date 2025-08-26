@@ -1,10 +1,12 @@
 import discord
 import asyncio
 import os
+import dotenv
 from discord.ext import commands
 from PyCharacterAI import get_client
 from PyCharacterAI.exceptions import SessionClosedError
-
+from dotenv import load_dotenv
+load_dotenv()
 # === CONFIG ===
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 CAI_TOKEN = os.getenv("CAI_TOKEN")
@@ -108,6 +110,6 @@ async def on_disconnect():
 
 if not DISCORD_TOKEN:
     print("❌ DISCORD_TOKEN not found in environment variables")
-    print("Please add your Discord bot token to the Railway Variables tab")
-else:
+    print("Please add your Discord bot token to the Secrets tab")
+else: # Start the web server to keep the bot alive
     bot.run(DISCORD_TOKEN)
