@@ -1,3 +1,5 @@
 discord.py
 PyCharacterAI
 python-dotenv
+flask
+
