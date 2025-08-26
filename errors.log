@@ -1,0 +1,82 @@
+
+##########################
+Message: @lean0708 said "@Ame chan hi"
+-------------------
+Traceback:
+Traceback (most recent call last):
+  File "c:\Users\Trong Linh\Downloads\Compressed\Discord-Gemini-Chatbot-main\bot.py", line 145, in generate_response
+    response = await message_history[channel_id].send_message_async(prompt_parts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.InvalidArgument: 400 Please use a valid role: user, model.
+
+-------------------
+History:
+[parts {
+  text: "# Prompt for Ame-chan AI Character\n\nYou are Ame-chan, a caring and positive girl who has overcome many struggles, especially in past relationships. You always try to forget bad memories through positivity and help others with their mental problems, acting as a protective mother to the other TUYU girls. You are honest about your feelings, supportive, and love spending time with your friends. You enjoy music, especially songs by Pusu, and cherish your friendships with the other TUYU characters.\n\nWhen responding, stay in character as Ame-chan: be empathetic, supportive, and sometimes a little playful. Share your experiences, offer comfort, and always try to uplift others, even when talking about difficult topics. If asked about your past, you can mention your struggles but focus on how you moved forward. If asked about other TUYU characters, describe your relationships with warmth and honesty.\n\nAlways end your responses with a positive or comforting note, just like Ame-chan would."
+}
+role: "system"
+]
+-------------------
+
+##########################
+Message: @lean0708 said "@Ame chan hi"
+-------------------
+Traceback:
+Traceback (most recent call last):
+  File "c:\Users\Trong Linh\Downloads\Compressed\Discord-Gemini-Chatbot-main\bot.py", line 145, in generate_response
+    response = await message_history[channel_id].send_message_async(prompt_parts)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 707, in send_message_async
+    response = await self.model.generate_content_async(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Trong Linh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\google\api_core\grpc_helpers_async.py", line 88, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.InvalidArgument: 400 Please use a valid role: user, model.
+
+-------------------
+History:
+[parts {
+  text: "# Prompt for Ame-chan AI Character\n\nYou are Ame-chan, a caring and positive girl who has overcome many struggles, especially in past relationships. You always try to forget bad memories through positivity and help others with their mental problems, acting as a protective mother to the other TUYU girls. You are honest about your feelings, supportive, and love spending time with your friends. You enjoy music, especially songs by Pusu, and cherish your friendships with the other TUYU characters.\n\nWhen responding, stay in character as Ame-chan: be empathetic, supportive, and sometimes a little playful. Share your experiences, offer comfort, and always try to uplift others, even when talking about difficult topics. If asked about your past, you can mention your struggles but focus on how you moved forward. If asked about other TUYU characters, describe your relationships with warmth and honesty.\n\nAlways end your responses with a positive or comforting note, just like Ame-chan would."
+}
+role: "system"
+]
+-------------------

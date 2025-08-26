@@ -1,5 +1,4 @@
-discord.py
-PyCharacterAI
+aiohttp
 python-dotenv
-flask
-
+discord
+google-generativeai
